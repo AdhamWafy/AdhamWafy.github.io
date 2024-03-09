@@ -96,6 +96,18 @@ div {
     background-image: url('blob2.svg');
 }
 
+.headimage {
+    aspect-ratio: 900/100;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.head{
+    background-image: url('head.svg');
+}
+
 @media only screen and (max-width: 600px) {
 .col { 
     display: block;
