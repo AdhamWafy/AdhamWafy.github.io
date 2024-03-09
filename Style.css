@@ -54,7 +54,7 @@ div {
 
 .hidden {
     opacity: 0;
-    transform: translateY(5%);
+    transform: translateY(10%);
     transition: all 1s;
 }
 
