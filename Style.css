@@ -27,6 +27,11 @@ div {
 a {
     text-decoration: none !important;
     color: white !important;
+    transition: ease-in-out 0.5s !important;
+}
+
+a:hover {
+    color: #9e90fa !important;
 }
 
 .sticky {
