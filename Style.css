@@ -7,8 +7,6 @@ body{
 h1 {font-size: 50;}
 
 p {word-wrap: break-word;
-    margin-left: auto;
-    margin-right: auto;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-style: normal;
@@ -25,6 +23,11 @@ div {
     margin-right: -2%;
     margin:auto;
     }
+
+a {
+    text-decoration: none !important;
+    color: white !important;
+}
 
 .sticky {
     position: fixed;
