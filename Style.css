@@ -59,13 +59,16 @@ div {
     transform: translateY(5%);
 }
 
+.mypad1 {
+    padding: 3rem !important;
+}
+
 @media only screen and (max-width: 600px) {
 .col { 
     display: block;
     width: 100%;
 }
-
-.p-5 {
-    padding: 1rem;
+.mypad1 {
+    padding: 1.2rem !important;
 }
 }
