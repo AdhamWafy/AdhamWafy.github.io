@@ -32,6 +32,7 @@ a {
 
 a:hover {
     color: #9e90fa !important;
+    font-size: 110% !important;
 }
 
 .sticky {
