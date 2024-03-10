@@ -90,7 +90,7 @@ a:hover {
 }
  
 .blobs {
-    aspect-ratio: 900/300;
+    aspect-ratio: 9/2;
     width: 100%;
     background-repeat: no-repeat;
     background-position: center;
@@ -103,6 +103,14 @@ a:hover {
 
 .blob2 {
     background-image: url('blob2.svg');
+}
+
+.blob3 {
+    background-image: url('blob3.svg');
+}
+
+.purple{
+    color: #6554d6 !important;
 }
 
 .headimage {
@@ -125,4 +133,10 @@ a:hover {
 .mypad1 {
     padding: 1.2rem !important;
 }
+}
+
+@media only screen and (max-width: 650px) {
+    .container{
+        max-width: 80%;
+    }
 }
