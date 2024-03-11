@@ -24,6 +24,32 @@ div {
     margin:auto;
     }
 
+
+
+.left-part-hide{
+    transform: translateX(-80%);
+    width: 50% !important;
+    opacity: 0 !important;
+    transition: all 1s;
+}
+.right-part-hide{
+    transform: translateX(30%);
+    opacity: 0 !important;
+    transition: all 1s;
+    width: 50% !important;
+}
+
+.left-part-show{
+    transform: translateX(0%);
+    opacity: 1 !important;
+    width: 50% !important;
+}
+.right-part-show{
+    transform: translateX(0%);
+    opacity: 1 !important;
+    width: 50% !important;
+}
+
 a {
     text-decoration: none !important;
     color: white !important;
