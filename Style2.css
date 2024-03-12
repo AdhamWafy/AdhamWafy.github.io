@@ -120,6 +120,17 @@ a:hover {
     padding: 0%;
 }
 
+.left-part-hide{
+    transform: translateX(-80%);
+    opacity: 0 !important;
+    transition: all 1s;
+}
+
+.left-part-show{
+    transform: translateX(0%);
+    opacity: 1 !important;
+}
+
 @media only screen and (max-width: 600px) {
 .col { 
     display: block;
