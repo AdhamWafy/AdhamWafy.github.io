@@ -120,11 +120,14 @@ a:hover {
 }
 
 .foot {
-    aspect-ratio: 3139/439;
+    aspect-ratio: 3139/430;
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: cover;
     width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
 }
 
 .bg-image {
