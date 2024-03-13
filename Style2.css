@@ -71,6 +71,10 @@ a:hover {
     font-size: 110% !important;
 }
 
+.navo {
+    background-color: #bfebff54 !important;
+}
+
 .bolder {
     font-family: "Poppins", sans-serif !important;
     font-weight: 400 !important;
@@ -115,18 +119,21 @@ a:hover {
     height: 100vh;
 }
 
-.blob1 {
-    background-image: url('blob1.svg');
+.foot {
+    aspect-ratio: 3139/439;
+    background-repeat: no-repeat;
+    background-position-y: 100%;
+    background-size: cover;
+    width: 100%;
 }
 
-.blob2 {
-    background-image: url('wave.svg');
+.bg-image {
+    background-image: url('noise.svg');
 }
 
-.blob3 {
-    background-image: url('blob3.svg');
+.foot-image {
+    background-image: url('wave.png');
 }
-
 
 .purple{
     color: #378CE7 !important;
