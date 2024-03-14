@@ -15,6 +15,23 @@
     --wave: url('wavedark.png');
     transition: all ease-in-out 0.5s;
 }
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    margin-right: 20px;
+    top: 63px;
+    float: right;
+    z-index: 2;
+    }
+
+nav li {
+    display: inline-block;
+    line-height: 60px;
+    margin: 0 5px;
+}
+
 p {word-wrap: break-word;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -44,39 +61,20 @@ body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    overflow: hidden; /* Hides scrollbars */
     }
 
-    body {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    justify-content: stretch;
-    }
-
-    .content {
-    flex: 1; /* Take up remaining space */
-    overflow-y: auto; /* Allow vertical scrolling if content exceeds screen */
-    padding: 0%;
-    margin: 0%;
-    }
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    }
-
-.mskip{
-    margin-right: 1.5%;
+body {
+display: flex;
+flex-direction: column;
+align-items: stretch;
+justify-content: stretch;
 }
 
-
-li {
-    margin-top: 2%;
-    margin-bottom: 0%;
-    float: right;
+.content {
+flex: 1; /* Take up remaining space */
+overflow-y: auto; /* Allow vertical scrolling if content exceeds screen */
+padding: 0%;
+margin: 0%;
 }
 
 .display-4 {
@@ -84,18 +82,23 @@ li {
 }
 
 a {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     text-decoration: none !important;
-    color: white !important;
+    color: var(--text-color-2);
     transition: ease-in-out 0.5s !important;
 }
 
 a:hover {
-    color: #9e90fa !important;
-    font-size: 110% !important;
+    color: #00c3ff !important;
 }
 
 .navo {
     background-color: var(--header) !important;
+    height: 60px;
+    width: 100%;
+    z-index: 3;
     transition: all ease-in-out 0.5s;
 }
 
@@ -123,7 +126,7 @@ a:hover {
     }
 }
  
-.blobs {
+.bg-ready {
     background-repeat: no-repeat;
     background-position-y: 100%;
     background-size: cover;
@@ -149,6 +152,11 @@ a:hover {
 .foot-image {
     background-image: var(--wave);
     transition: all ease-in-out 0.5s;
+    z-index: 5;
+}
+
+body::-webkit-scrollbar {
+    z-index: 999; /* Set a high z-index value */
 }
 
 .purple{
@@ -156,19 +164,13 @@ a:hover {
     transition: all ease-in-out 0.5s;
 }
 
-.row {
-    padding: 0%;
-    margin: 0;
-}
-
-.col {
-    padding: 0%;
-}
-
 .no-border{
     padding: 0;
     border: none;
     background: none;
+    float: right;
+    margin-top: 16px;
+    margin-right: 10px;
 }
 
 .left-part-hide{
@@ -182,16 +184,63 @@ a:hover {
     opacity: 1 !important;
 }
 
+.burger {
+    float: right !important;
+    margin-top: 15px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#checkbox {
+    display: none;
+}
+
+.brand{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
 @media only screen and (max-width: 600px) {
-.col { 
-    display: block;
-    width: 100%;
-}
-.mypad1 {
-    padding: 1.2rem !important;
-}
 
 .display-4{
     font-size: 250% !important;
 }
+}
+
+@media only screen and (max-width: 346px) {
+    .display-4{
+        font-size: 200% !important;
+    }
+}
+
+@media only screen and (max-width: 294px) {
+    .display-4{
+        font-size: 130% !important;
+    }
+}
+
+@media only screen and (max-width: 492px){
+    .burger {
+        display: block;
+    }
+    nav ul{
+        background: var(--background);
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        margin: 0;
+        text-align: center;
+        padding: 0;
+        left: -100%;
+        transition: 0.5s all;
+    }
+    nav ul li {
+        display: block;
+        font-size: 160%;
+    }
+
+    #checkbox:checked ~ ul {
+        left: 0;
+    }
 }
