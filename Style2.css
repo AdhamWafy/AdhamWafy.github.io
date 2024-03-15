@@ -1,19 +1,28 @@
 .root {
     --text-color: black;
     --text-color-2: #378CE7;
-    --background: url('noise.svg');
+    --background: url('Assets/noise.svg');
     --header: #bfebff54;
-    --wave: url('wave.png');
+    --wave: url('Assets/wave.png');
     transition: all ease-in-out 0.5s;
+    --text-font: "Poppins", sans-serif;
+    --text-size: 120% !important;
+    --text-size-2: 100% !important;
 }
 
 .dark{
     --text-color: rgb(226, 248, 255);
     --text-color-2: #74aeec;
-    --background: url('noisedark.svg');
+    --background: url('Assets/noisedark.svg');
     --header: #46464654;
-    --wave: url('wavedark.png');
+    --wave: url('Assets/wavedark.png');
     transition: all ease-in-out 0.5s;
+}
+
+.ar {
+    --text-font: "Mada", sans-serif;
+    --text-size: 155% !important;
+    --text-size-2: 130% !important;
 }
 
 nav ul {
@@ -33,7 +42,7 @@ nav li {
 }
 
 p {word-wrap: break-word;
-    font-family: "Poppins", sans-serif;
+    font-family: var(--text-font) !important;
     font-weight: 400;
     font-style: normal;
     color: var(--text-color);
@@ -79,18 +88,24 @@ margin: 0%;
 
 .display-4 {
     font-size: 350% !important;
+    font-family: var(--text-font) !important;
 }
 
 a {
-    font-family: "Poppins", sans-serif;
+    font-family:var(--text-font);
     font-weight: 400;
     font-style: normal;
     text-decoration: none !important;
     color: var(--text-color-2);
     transition: ease-in-out 0.5s !important;
+    font-size: var(--text-size-2);
 }
 
-a:hover {
+.lead {
+    font-size: var(--text-size) !important;
+}
+
+a:hover, a.active {
     color: #00c3ff !important;
 }
 
@@ -102,8 +117,12 @@ a:hover {
     transition: all ease-in-out 0.5s;
 }
 
+.rtl {
+    direction: rtl !important;
+}
+
 .bolder {
-    font-family: "Poppins", sans-serif !important;
+    font-family: var(--text-font) !important;
     font-weight: 400 !important;
     font-style: normal !important;
 }
@@ -115,6 +134,7 @@ a:hover {
     -webkit-text-fill-color: transparent;
     background-size: 500% auto;
     animation: grad-animation 2s infinite ease-in-out alternate;
+    font-family: var(--text-font);
 }
 
 @keyframes grad-animation{
@@ -182,6 +202,23 @@ body::-webkit-scrollbar {
 .left-part-show{
     transform: translateX(0%);
     opacity: 1 !important;
+}
+
+.right-part-hide{
+    transform: translateX(30%);
+    opacity: 0 !important;
+    transition: all 1s;
+    width: 100% !important;
+}
+
+.right-part-show{
+    transform: translateX(0%);
+    opacity: 1 !important;
+    width: 100% !important;
+}
+
+.row {
+    width: 100% !important;
 }
 
 .burger {

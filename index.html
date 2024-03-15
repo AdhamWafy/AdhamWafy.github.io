@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Adham Wafy</title>
-        <link rel="stylesheet" href="Style.css">
+        <title>أدهم وافي</title>
+        <link rel="stylesheet" href="Style2.css">
+        <link rel="shortcut icon" href="Assets/Logo.png" type="image/x-icon">
         <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 
         <!-- Latest compiled and minified CSS -->
@@ -15,63 +16,47 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Mada:wght@200..900&display=swap" rel="stylesheet">
 
     </head>
 
-    <body>
-        <div class="d-flex flex-column bg-dark p-3 head headimage">
-            <p class="display-4 text-center text-shadow-lg bolder" style="color: #e8e6f8;">I am <span class="special-text-gradient">Adham Wafy</span>,</p>
-            <p class="h3 text-center purple" style="width: 100%; font-size: 150%;">designer & developer</p>
-            <p class="text-center" style="margin-left : -13px"><a href="">Projects (place-holder)</a><a href="">&#x2022; </a><a href="">Contact (place-holder)</a>
-        </div>
-
-        <div class="blob1 blobs">
-            <div class="my-5"></div>
-            <div class="container shadow-lg mypad1 bg-light text-black hidden row rounded my-5" style="margin: auto;" id = "Offer">
-                <p class="display-4 text-center text-center bolder purple"> What can I do?</p>
-                <p class="lead">I could build the front end of a website to make ones like this! With my expertise in HTML, CSS, and JavaScript, I can craft visually appealing and user-friendly interfaces that captivate audiences and drive engagement. Whether it's creating sleek landing pages, interactive web applications, or responsive designs optimized for various devices, I thrive on turning ideas into stunning digital experiences. Let's collaborate and bring your vision to life!</p>
-            </div>
-        </div>
-
-        <div class="blob2 blobs">
-            <div class="container shadow-lg mypad1 bg-light text-black hidden row rounded my-5" style="margin: auto;" >
-                <div class="container row">
-                    <p class="display-4 text-end bolder purple left-part-hide col" style="padding: 0%;">A brief history&nbsp;</p>
-                    <p class="display-4 text-start bolder purple right-part-hide col" style="padding: 0%;">of my journey.</p>
+    <body class="bg-ready bg-image root ar" id="body">
+        <!--All of body-->
+        <div class="content">
+            <!--Navbar-->
+            <nav class="shadow-sm navo">
+                <input type="checkbox" class="check" id="checkbox">
+                <label for="checkbox" class="burger"><img src="Assets/burger.png" alt="" width="30px"></label>
+                <label class="brand"><img src="Assets/Logo.png" alt=""  width="40px"></label>
+                <label class="brand"><p class="special-text-gradient">أدهم وافي</p></label>
+                <button onclick="Switch()" class="no-border"><img src="Assets/mode.png" alt="" width="30px"></button>
+                <ul>
+                    <li class=""><a href="" class="active">الرئيسية</a></li>
+                    <li class=""><a href="">المشاريع السابقة</a></li>
+                    <li class=""><a href="">أتصل بي</a></li>
+                    <li class=""><a href="en.html" class="root">English</a></li>
+                </ul>
+            </nav>
+            <!--Content-->
+            <div class="row right-part-hide" style="margin-bottom: 10%; width: 100%; padding-right: 0;">
+                <div class="container col-md-5">
+                </div> 
+                <div class="container col-md-7">
+                    <div class="container p-3 rtl">
+                        <p class="display-4 text-end text-shadow-lg bolder purple rtl">أهلا, انا <span class="special-text-gradient rtl">أدهم وافي</span></p>
+                    </div>
+                    <hr style="margin: 0%;" class="hro">
+                    <div class="container text-black hidden my-2 p-3" id = "Offer">
+                            <p class="lead rtl bolder">أنا مطور و مصمم صفحات انترنت مصري, بحب جدا اعمل صفحات شكلها أنيق وحديث, بحاول قدر أستطاعتي اعمل صفحة مناسبة و مريحة للزائرين, بخبرتي في Html و Css و Javascript هقدر احول افكارك لحقيقة, مهما كانت: صفحة شخصية, موقع لمشروع,  بس قولي انت محتاج ايه !</p>
+                    </div>
                 </div>
-                <div class="col-md-4">
-                    <p class="display-5">Python</p>
-                    <hr color="#000000">
-                    <p class="lead">I began my programming journey with Python and successfully developed my coding abilities in that language. However, I eventually discovered that Python wasn't the ideal fit for my specific programming interests.</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="display-5">C#</p>
-                    <hr color="#000000">
-                    <p class="lead">This language truly ignited my passion for programming. I found myself readily applying my skills to create innovative and creative projects.</p>
-                </div>
-                <div class="col-md-4">
-                    <p class="display-5">Web Dev</p>
-                    <hr color="#000000">
-                    <p class="lead">I'm currently honing my skills in this field, and I'm confident it will be the foundation for a fulfilling career in web development.</p>
-                </div>
+            
             </div>
+            <!--Footer-->
+            <footer class="foot foot-image">
+
+            </footer>
         </div>
-
-        <div  class="blob3 blobs">
-            <div class="container shadow-lg mypad1 bg-light text-black hidden row rounded" style="margin: auto;" >
-                <p class="display-4 text-center bolder purple">Who am I?<br></p>
-                <p class="lead">I am an ambitious Egyptian who was always passionate about programming. I had a lot of mistakes and experiences to learn from in different fields and languages, until I found my talent, the thing that I love the most, where my creativity shines: Full-stack Web Development.</p>
-            </div>
-        </div>
-
-        
-
-        <footer class="bg-dark p-3 text-white">
-            <div class="container">
-                <p class="h5 text-center"></p>
-            </div>
-        </footer>
     </body>
 
 </html>
