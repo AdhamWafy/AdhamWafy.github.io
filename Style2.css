@@ -11,8 +11,11 @@
 }
 
 .dark{
+    --text-font: "Poppins", sans-serif;
     --text-color: rgb(226, 248, 255);
     --text-color-2: #74aeec;
+    --text-size: 120% !important;
+    --text-size-2: 100% !important;
     --background: url('Assets/noisedark.svg');
     --header: #46464654;
     --wave: url('Assets/wavedark.png');
