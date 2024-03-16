@@ -1,7 +1,7 @@
 .root {
     --text-color: black;
     --text-color-2: #378CE7;
-    --background: url('Assets/noise.svg');
+    --background: url('Assets/noise.png');
     --header: #bfebff54;
     --wave: url('Assets/wave.png');
     transition: all ease-in-out 0.5s;
@@ -17,7 +17,7 @@
     --text-color-2: #74aeec;
     --text-size: 120% !important;
     --text-size-2: 100% !important;
-    --background: url('Assets/noisedark.svg');
+    --background: url('Assets/noisedark.png');
     --header: #46464654;
     --wave: url('Assets/wavedark.png');
     --head-color: #1d1d1d;
