@@ -7,8 +7,9 @@
     --text-font: "Poppins", sans-serif;
     --text-size: 120% !important;
     --text-size-2: 100% !important;
-    --head-color: #DFF5FF;
-    --card-color: rgba(149, 185, 229, 0.171);
+    --head-color: #dff5ff;
+    --card-color: rgba(117, 200, 255, 0.158);
+    --img-g: url('Assets/rootg.png');
     transition: all ease-in-out 0.5s;
 }
 
@@ -21,8 +22,9 @@
     --background: url('Assets/noisedark.png');
     --header: #46464654;
     --wave: url('Assets/wavedark.png');
-    --head-color: #1d1d1d;
+    --head-color: rgb(29, 29, 29);
     --card-color: rgba(64, 81, 102, 0.171);
+    --img-g: url('Assets/darkg.png');
     transition: all ease-in-out 0.5s;
 }
 
@@ -291,6 +293,27 @@ a:hover, a.active {
 .card ul {
     padding: 1px !important;
 }
+
+.blur {
+    position: fixed;
+    bottom: 12px;
+    left: 0;
+    width: inherit;
+    height: 100px; /* Adjust height as needed */
+    aspect-ratio: 5/2;
+    background-image: var(--img-g);
+    transition: all 0.5s ease-in-out;
+  }
+
+.blur2 {
+    position: fixed;
+    bottom: 0px;
+    left: 0;
+    width: inherit;
+    height: 12px; /* Adjust height as needed */
+    background: var(--head-color);
+    transition: all 0.5s ease-in-out;
+  }
 
 @media only screen and (max-width: 743px) {
     .card .display-4 {
