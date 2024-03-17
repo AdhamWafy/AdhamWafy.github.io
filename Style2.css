@@ -1,26 +1,28 @@
 .root {
     --text-color: black;
-    --text-color-2: #378CE7;
+    --text-color-2: hsl(211, 85%, 39%);
     --background: url('Assets/noise.png');
     --header: #bfebff54;
     --wave: url('Assets/wave.png');
-    transition: all ease-in-out 0.5s;
     --text-font: "Poppins", sans-serif;
     --text-size: 120% !important;
     --text-size-2: 100% !important;
     --head-color: #DFF5FF;
+    --card-color: rgba(149, 185, 229, 0.171);
+    transition: all ease-in-out 0.5s;
 }
 
 .dark{
     --text-font: "Poppins", sans-serif;
     --text-color: rgb(226, 248, 255);
-    --text-color-2: #74aeec;
+    --text-color-2: hsl(211, 85%, 39%);
     --text-size: 120% !important;
     --text-size-2: 100% !important;
     --background: url('Assets/noisedark.png');
     --header: #46464654;
     --wave: url('Assets/wavedark.png');
     --head-color: #1d1d1d;
+    --card-color: rgba(64, 81, 102, 0.171);
     transition: all ease-in-out 0.5s;
 }
 
@@ -74,7 +76,7 @@ div {
 body, html {
     margin: 0;
     padding: 0;
-    height: -webkit-fill-available;
+    height: 100vh;
     }
 
 body {
@@ -180,10 +182,6 @@ a:hover, a.active {
     z-index: 5;
 }
 
-body::-webkit-scrollbar {
-    z-index: 999; /* Set a high z-index value */
-}
-
 .purple{
     color: var(--text-color-2) !important;
     transition: all ease-in-out 0.5s;
@@ -243,6 +241,84 @@ body::-webkit-scrollbar {
     margin-left: 10px;
 }
 
+.projects a{
+    font-size: 300% !important;
+}
+
+.projects p{
+    font-size: 130% !important;
+}
+
+.projects{
+    width: 35% !important;
+    height: 45vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    margin: 0 !important;
+    padding-left: 0px;
+}
+
+.projects::-webkit-scrollbar {
+    background-color: #ffffff00;
+    width: 4px;
+}
+
+.projects::-webkit-scrollbar-thumb {
+    background-color: #0f61b871;
+    border-radius: 10px;
+}
+
+.titlep {
+    padding-top: 2%;
+}
+
+.card {
+    background-color: var(--card-color) !important;
+    backdrop-filter: blur(1px) !important;
+    border: none !important;
+    padding: 10px !important;
+    margin-left: 5% !important;
+    margin-right: 0%;
+    margin-top: 6% !important;
+    transition: all ease-in-out 0.5s;
+}
+
+.card .display-4 {
+    font-size: 335% !important;
+    margin: auto !important;
+}
+
+.card ul {
+    padding: 1px !important;
+}
+
+@media only screen and (max-width: 743px) {
+    .card .display-4 {
+        font-size: 255% !important;
+    }
+    .card .lead{
+        font-size: 100% !important;
+    }
+}
+
+@media only screen and (max-width: 628px) {
+    .card .display-4 {
+        font-size: 175% !important;
+    }
+    .card .lead{
+        font-size: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .card .display-4 {
+        font-size: 275% !important;
+    }
+    .card .lead{
+        font-size: 140% !important;
+    }
+}
+
 @media only screen and (max-width: 600px) {
 
 .display-4{
@@ -262,7 +338,7 @@ body::-webkit-scrollbar {
     }
 }
 
-@media only screen and (max-width: 492px){
+@media only screen and (max-width: 512px){
     .burger {
         display: block;
     }
@@ -284,5 +360,57 @@ body::-webkit-scrollbar {
 
     #checkbox:checked ~ ul {
         transform: translateX(0%);
+    }
+
+    body, html {
+        height: 120vh;
+    }
+}
+
+@media only screen and (max-width: 1323px){
+    .projects{
+        width: 45% !important;
+    }
+}
+
+@media only screen and (max-width: 1250px){
+    .projects{
+        width: 50% !important;
+    }
+}
+
+@media only screen and (max-width: 903px){
+    .projects{
+        width: 60% !important;
+    }
+}
+
+@media only screen and (max-width: 707px){
+    .projects{
+        width: 70% !important;
+    }
+}
+
+@media only screen and (max-width: 581px){
+    .projects{
+        width: 80% !important;
+    }
+}
+
+@media only screen and (max-width: 493px){
+    .projects p{
+        font-size: 170% !important;
+    }
+}
+
+@media only screen and (max-width: 442px){
+    .projects{
+        width: 90% !important;
+    }
+}
+
+@media only screen and (max-width: 278px){
+    .projects{
+        width: 95% !important;
     }
 }
