@@ -38,8 +38,15 @@ if (localStorage.getItem("mode") == "dark"){
     body.classList.remove("root")
 }
 else{
-    body.classList.remove("dark")
-    body.classList.add("root")
+    if(localStorage.getItem("mode") == "root")
+    {
+        body.classList.remove("dark")
+        body.classList.add("root")
+    }
+    else{
+        body.classList.add("dark")
+        body.classList.remove("root")
+    }
 }
 
 function Switch(){
