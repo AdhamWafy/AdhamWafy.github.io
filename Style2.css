@@ -10,6 +10,10 @@
     --head-color: #dff5ff;
     --card-color: rgba(117, 200, 255, 0.158);
     --img-g: url('Assets/rootg.png');
+    --Ypos: 500px;
+    --Xpos: 500px;
+    --hover-color: #55c1ff27;
+    --hover-color2: #cecece0a;
     transition: all ease-in-out 0.5s;
 }
 
@@ -25,6 +29,8 @@
     --head-color: rgb(29, 29, 29);
     --card-color: rgba(64, 81, 102, 0.171);
     --img-g: url('Assets/darkg.png');
+    --hover-color: #1050b11a;
+    --hover-color2: #005dc713;
     transition: all ease-in-out 0.5s;
 }
 
@@ -282,6 +288,14 @@ a:hover, a.active {
     margin-left: 5% !important;
     margin-right: 0%;
     margin-top: 6% !important;
+    background: radial-gradient(circle at var(--Xpos) var(--Ypos),var(--hover-color), var(--hover-color2), transparent 100%), var(--card-color);
+    transition: all ease-in-out 0.5s;
+}
+
+.card:hover{
+    background: radial-gradient(circle at var(--Xpos) var(--Ypos),var(--hover-color), var(--hover-color2), transparent 100%), var(--card-color);
+    background-repeat: no-repeat;
+    background-size:contain;
     transition: all ease-in-out 0.5s;
 }
 
@@ -294,15 +308,20 @@ a:hover, a.active {
     padding: 1px !important;
 }
 
+.card p {
+    pointer-events: none;
+}
+
 .blur {
     position: fixed;
     bottom: 12px;
     left: 0;
     width: inherit;
     height: 100px; /* Adjust height as needed */
-    aspect-ratio: 5/2;
+    aspect-ratio: 10/2;
     background-image: var(--img-g);
     transition: all 0.5s ease-in-out;
+    pointer-events: none;
   }
 
 .blur2 {
@@ -313,7 +332,20 @@ a:hover, a.active {
     height: 12px; /* Adjust height as needed */
     background: var(--head-color);
     transition: all 0.5s ease-in-out;
+    pointer-events: none;
   }
+
+  .card2 {
+    background-color: var(--card-color) !important;
+    backdrop-filter: blur(1px) !important;
+    border: none !important;
+    border-radius: 5px;
+    padding: 10px !important;
+    padding-bottom: 0px !important;
+    background: radial-gradient(circle at var(--Xpos) var(--Ypos),var(--hover-color), var(--hover-color2), transparent 100%), var(--card-color);
+    transition: all ease-in-out 0.5s;
+}
+
 
 @media only screen and (max-width: 743px) {
     .card .display-4 {
