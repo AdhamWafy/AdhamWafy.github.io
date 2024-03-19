@@ -82,9 +82,10 @@ div {
     }
 
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
+    margin: 0 !important;
+    padding: 0 !important;
+    height: 100% !important;
+    width: 100%;
     }
 
 body {
