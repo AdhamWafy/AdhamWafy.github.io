@@ -343,6 +343,7 @@ a:hover, a.active {
     border-radius: 5px;
     padding: 10px !important;
     padding-bottom: 0px !important;
+    margin-left: 5% !important;
     background: radial-gradient(circle at var(--Xpos) var(--Ypos),var(--hover-color), var(--hover-color2), transparent 100%), var(--card-color);
     transition: all ease-in-out 0.5s;
 }
