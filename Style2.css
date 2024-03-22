@@ -1,15 +1,15 @@
 .root {
     --text-color: black;
     --text-color-2: hsl(211, 85%, 39%);
-    --background: url('Assets/noise.png');
+    --background: url('Assets/noise.svg');
     --header: #bfebff54;
-    --wave: url('Assets/wave.png');
+    --wave: url('Assets/wave.svg');
     --text-font: "Poppins", sans-serif;
     --text-size: 120% !important;
     --text-size-2: 100% !important;
     --head-color: #dff5ff;
     --card-color: rgba(117, 200, 255, 0.158);
-    --img-g: url('Assets/rootg.png');
+    --img-g: url('Assets/rootg.svg');
     --Ypos: 500px;
     --Xpos: 500px;
     --hover-color: #55c1ff27;
@@ -23,12 +23,12 @@
     --text-color-2: hsl(211, 85%, 39%);
     --text-size: 120% !important;
     --text-size-2: 100% !important;
-    --background: url('Assets/noisedark.png');
+    --background: url('Assets/noisedark.svg');
     --header: #46464654;
-    --wave: url('Assets/wavedark.png');
+    --wave: url('Assets/wavedark.svg');
     --head-color: rgb(29, 29, 29);
     --card-color: rgba(64, 81, 102, 0.171);
-    --img-g: url('Assets/darkg.png');
+    --img-g: url('Assets/darkg.svg');
     --hover-color: #1050b11a;
     --hover-color2: #005dc713;
     transition: all ease-in-out 0.5s;
