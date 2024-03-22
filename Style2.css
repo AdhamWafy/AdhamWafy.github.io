@@ -197,7 +197,7 @@ a:hover, a.active {
 }
 
 .foot-image {
-    background-image: var(--wave);
+    background-image: var(--wave),var(--background);
     transition: all ease-in-out 0.5s;
     z-index: 5;
 }
