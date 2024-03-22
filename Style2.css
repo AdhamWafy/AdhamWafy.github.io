@@ -207,25 +207,21 @@ a:hover, a.active {
 }
 
 .left-part-hide{
-    transform: translateX(-80%);
     opacity: 0 !important;
     transition: all 1s;
 }
 
 .left-part-show{
-    transform: translateX(0%);
     opacity: 1 !important;
 }
 
 .right-part-hide{
-    transform: translateX(30%);
     opacity: 0 !important;
     transition: all 1s;
     width: 100% !important;
 }
 
 .right-part-show{
-    transform: translateX(0%);
     opacity: 1 !important;
     width: 100% !important;
 }
