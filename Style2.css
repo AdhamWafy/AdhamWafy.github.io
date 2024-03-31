@@ -1,19 +1,21 @@
 .root {
     --text-color: black;
     --text-color-2: hsl(211, 85%, 39%);
-    --background: url('Assets/noise.svg');
+    --background: rgb(226, 248, 255);
     --header: #bfebff54;
-    --wave: url('Assets/wave.svg');
+    --wave: url('Assets/wave.webp');
     --text-font: "Poppins", sans-serif;
     --text-size: 120% !important;
     --text-size-2: 100% !important;
-    --head-color: #dff5ff;
+    --head-color: #d6eaf346;
     --card-color: rgba(117, 200, 255, 0.158);
     --img-g: url('Assets/rootg.svg');
     --Ypos: 500px;
     --Xpos: 500px;
     --hover-color: #55c1ff27;
     --hover-color2: #cecece0a;
+    --mar-left: 5%;
+    --wave-bright: brightness(100%);
     transition: all ease-in-out 0.5s;
 }
 
@@ -23,14 +25,16 @@
     --text-color-2: hsl(211, 85%, 39%);
     --text-size: 120% !important;
     --text-size-2: 100% !important;
-    --background: url('Assets/noisedark.svg');
+    --background: #1d1d1e;
     --header: #46464654;
-    --wave: url('Assets/wavedark.svg');
-    --head-color: rgb(29, 29, 29);
+    --wave: url('Assets/wave.webp');
+    --wave-bright: brightness(50%);
+    --head-color: rgba(37, 37, 37, 0.692);
     --card-color: rgba(64, 81, 102, 0.171);
     --img-g: url('Assets/darkg.svg');
     --hover-color: #1050b11a;
     --hover-color2: #005dc713;
+    --mar-left: 5%;
     transition: all ease-in-out 0.5s;
 }
 
@@ -38,6 +42,7 @@
     --text-font: "Mada", sans-serif;
     --text-size: 155% !important;
     --text-size-2: 130% !important;
+    --mar-left: 0%;
 }
 
 nav ul {
@@ -56,6 +61,11 @@ nav li {
     margin: 0 5px;
 }
 
+.p-3-top {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+
 p {word-wrap: break-word;
     font-family: var(--text-font) !important;
     font-weight: 400;
@@ -72,7 +82,7 @@ p {word-wrap: break-word;
 
 .contact {
     display: inline-block;
-    margin-right: 1%;
+    margin-left: 0 !important;
 }
 
 .inline {
@@ -95,7 +105,7 @@ body, html {
     margin: 0 !important;
     padding: 0 !important;
     height: 100% !important;
-    width: 100%;
+    width: 100vw;
     }
 
 body {
@@ -113,7 +123,7 @@ margin: 0%;
 }
 
 .display-4 {
-    font-size: 350% !important;
+    font-size: 400% !important;
     font-family: var(--text-font) !important;
 }
 
@@ -136,21 +146,32 @@ a:hover, a.active {
 }
 
 .navo {
-    background-color: var(--header) !important;
     height: 60px;
     width: 100%;
+    margin-bottom: 15px;
     z-index: 3;
+    background-color: var(--head-color);
     transition: all ease-in-out 0.5s;
+}
+
+.brand{
+    margin-left: 20px !important;
+    margin-right: 10px !important;
 }
 
 .rtl {
     direction: rtl !important;
+
 }
 
 .bolder {
     font-family: var(--text-font) !important;
     font-weight: 400 !important;
     font-style: normal !important;
+}
+
+.text-shadow-lg{
+    margin: 0z;
 }
 
 .special-text-gradient {
@@ -192,14 +213,22 @@ a:hover, a.active {
 }
 
 .bg-image {
-    background-image: var(--background);
+    background: var(--background);
     transition: all ease-in-out 0.5s;
 }
 
 .foot-image {
-    background-image: var(--wave),var(--background);
+    background-image: var(--wave);
+    filter: var(--wave-bright);
     transition: all ease-in-out 0.5s;
     z-index: 5;
+}
+
+.infoot {
+    background-color: var(--text-color);
+    width: 10vw;
+    height: 10vw;
+    border-radius: 100%;
 }
 
 .purple{
@@ -258,20 +287,19 @@ a:hover, a.active {
 }
 
 .projects a{
-    font-size: 300% !important;
+    font-size: 220% !important;
 }
 
 .projects p{
-    font-size: 130% !important;
+    font-size: 110% !important;
 }
 
 .projects{
-    width: 35% !important;
+    width: 100% !important;
     height: 45vh;
     overflow-x: hidden;
     overflow-y: auto;
-    margin: 0 !important;
-    padding-left: 0px;
+    margin: 10px !important;
 }
 
 .projects::-webkit-scrollbar {
@@ -292,10 +320,9 @@ a:hover, a.active {
     background-color: var(--card-color) !important;
     backdrop-filter: blur(1px) !important;
     border: none !important;
-    padding: 10px !important;
-    margin-left: 5% !important;
+    margin-left: var(--mar-left) !important;
     margin-right: 0%;
-    margin-top: 6% !important;
+    padding: 10px;
     background: radial-gradient(circle at var(--Xpos) var(--Ypos),var(--hover-color), var(--hover-color2), transparent 100%), var(--card-color);
     transition: all ease-in-out 0.5s;
 }
@@ -321,9 +348,8 @@ a:hover, a.active {
 }
 
 .blur {
-    position: fixed;
-    bottom: 12px;
-    left: 0;
+    position: absolute;
+    bottom: 0;
     width: inherit;
     height: 100px; /* Adjust height as needed */
     aspect-ratio: 10/2;
@@ -350,7 +376,6 @@ a:hover, a.active {
     border-radius: 5px;
     padding: 10px !important;
     padding-bottom: 0px !important;
-    margin-left: 5% !important;
     background: radial-gradient(circle at var(--Xpos) var(--Ypos),var(--hover-color), var(--hover-color2), transparent 100%), var(--card-color);
     transition: all ease-in-out 0.5s;
 }
@@ -398,7 +423,7 @@ a:hover, a.active {
 
 @media only screen and (max-width: 294px) {
     .display-4{
-        font-size: 130% !important;
+        font-size: 200% !important;
     }
 }
 
@@ -414,7 +439,7 @@ a:hover, a.active {
         text-align: center;
         padding: 0;
         transform: translateX(100%);
-        background: var(--head-color);
+        background: var(--background);
         transition: 1s all;
     }
     nav ul li {
@@ -428,53 +453,5 @@ a:hover, a.active {
 
     body, html {
         height: 120vh;
-    }
-}
-
-@media only screen and (max-width: 1323px){
-    .projects{
-        width: 45% !important;
-    }
-}
-
-@media only screen and (max-width: 1250px){
-    .projects{
-        width: 50% !important;
-    }
-}
-
-@media only screen and (max-width: 903px){
-    .projects{
-        width: 60% !important;
-    }
-}
-
-@media only screen and (max-width: 707px){
-    .projects{
-        width: 70% !important;
-    }
-}
-
-@media only screen and (max-width: 581px){
-    .projects{
-        width: 80% !important;
-    }
-}
-
-@media only screen and (max-width: 493px){
-    .projects p{
-        font-size: 170% !important;
-    }
-}
-
-@media only screen and (max-width: 442px){
-    .projects{
-        width: 90% !important;
-    }
-}
-
-@media only screen and (max-width: 278px){
-    .projects{
-        width: 95% !important;
     }
 }
