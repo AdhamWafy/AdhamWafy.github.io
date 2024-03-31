@@ -14,7 +14,6 @@
     --Xpos: 500px;
     --hover-color: #55c1ff27;
     --hover-color2: #cecece0a;
-    --mar-left: 5%;
     --wave-bright: brightness(100%);
     transition: all ease-in-out 0.5s;
 }
@@ -317,7 +316,7 @@ a:hover, a.active {
     background-color: var(--card-color) !important;
     backdrop-filter: blur(1px) !important;
     border: none !important;
-    margin-left: var(--mar-left) !important;
+    margin: 0;
     padding: 10px;
     background: radial-gradient(circle at var(--Xpos) var(--Ypos),var(--hover-color), var(--hover-color2), transparent 100%), var(--card-color);
     transition: all ease-in-out 0.5s;
